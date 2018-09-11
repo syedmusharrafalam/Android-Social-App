@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.socialapp.MainActivity"
+    android:background="@drawable/shaheen"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarView"
+        android:background="@color/myColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+<TextView
+   android:background="@color/back"
+    android:textColor="@color/backs"
+    android:id="@+id/username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="User Name"
+    android:textSize="50dp"
+    android:layout_below="@+id/toolbarView"
+    android:layout_centerHorizontal="true" />
+
+<android.support.v7.widget.RecyclerView
+    android:layout_below="@+id/username"
+    android:id="@+id/recyclerViews"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+</android.support.v7.widget.RecyclerView>
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/floatingAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:elevation="10dp"
+        app:useCompatPadding="true"
+        android:elevation="5dp"
+        android:src="@drawable/plus"
+        android:layout_alignParentRight="true"
+
+        />
+
+</RelativeLayout>

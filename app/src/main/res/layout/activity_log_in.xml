@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.socialapp.LogInActivity">
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="45dp"
+            android:gravity="center"
+            android:textColor="@color/myColor"
+            />
+        <EditText
+            android:textColorHint="@color/back"
+            android:layout_margin="15dp"
+            android:inputType="textEmailAddress"
+            android:hint="ENTER YOUR EMAIL"
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColorHint="@color/back"
+            android:layout_margin="15dp"
+            android:inputType="textPassword"
+            android:hint="ENTER YOUR PASSWORD"
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textColor="@color/myColors"
+            android:background="@color/myColor"
+            android:layout_margin="15dp"
+            android:id="@+id/buttonLogin"
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textColor="@color/myColors"
+            android:layout_margin="15dp"
+            android:background="@color/myColor"
+            android:textAlignment="center"
+            android:text="SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSignup"
+            />
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbarLogin"
+        />
+</RelativeLayout>
